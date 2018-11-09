@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Micah Fischer
+   Date:   11-9-18
+	
+   Filename: br_styles.css
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+nav {
+    background: rgb(10, 76, 151);
+    display: block;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 4fr;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat',
+        sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+h1 {
+    color: black;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(46, 93, 131);
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+header {
+    display: block;
+    height: 450px;
+    background: url("https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47b4b88e2825332da6fb93898562051c&auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    filter: grayscale(.5) brightness(125%);
+}
+
+article {
+    width: 80%;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+    margin: 0 auto;
+}
+
+article h1 {
+    background: white;
+    color: black;
+    text-align: left;
+    padding: 20px;
+}
+
+font-family: 'Montserrat',
+sans-serif;
