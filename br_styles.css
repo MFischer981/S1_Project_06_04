@@ -11,27 +11,46 @@
 	
    Filename: br_styles.css
 */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
+/* A subtle radial gradient in the html background. */
+html {
+    background-image: radial-gradient(white, rgb(240, 240, 240));
+}
+
+/* A nav with a linear gradient across, with progressive enhancement. Box shadow added to the nav bar. */
 nav {
-    background: rgb(10, 76, 151);
+    background-color: #21D4FD;
+    background-image: linear-gradient(-19deg, #21D4FD 0%, #3e21ff 100%);
     display: block;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 4fr;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+/* Nav links with a 2 pixel white solid border. 40 pixel border radius applied to create rounded border edges.*/
 nav a {
     color: rgb(255, 255, 255);
     font-family: 'Montserrat',
         sans-serif;
     text-align: center;
     padding: 10px;
+    border: 2px white solid;
+    border-radius: 40px;
+    margin: 4px;
+    width: 160px;
 }
 
+/* A border radius of 40 pixels and white background on hover. */
 nav a:hover {
     background: white;
     color: black;
+    border-radius: 40px;
 }
 
 h1 {
@@ -54,6 +73,14 @@ h2 {
     text-align: center;
 }
 
+/* Text shadow with no offset applied to span inside the h2 element. */
+h2 span {
+    color: rgb(58, 137, 202);
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+/* A header with a height of 450. A background image added with a size of cover to span the full height and width of the image. */
 header {
     display: block;
     height: 450px;
@@ -62,10 +89,11 @@ header {
     filter: grayscale(.5) brightness(125%);
 }
 
+/* Article with a drop shadow applied. Offset 0 horizontally and 10px vertically. Shadow color of transparent black. */
 article {
     width: 80%;
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
-    margin: 0 auto;
+    margin: -100px auto 0;
 }
 
 article h1 {
@@ -75,5 +103,37 @@ article h1 {
     padding: 20px;
 }
 
-font-family: 'Montserrat',
-sans-serif;
+article p {
+    background: white;
+    color: black;
+    text-align: left;
+    padding: 6px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article section.grid {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Linear gradient at -19deg angle. Light blue at 0% stop, dark blue at 100% stop. */
+article section.grid p {
+    background-color: #21D4FD;
+    background-image: linear-gradient(-19deg, #21D4FD 0%, #3e21ff 100%);
+    color: white;
+    margin: 0 4px 4px;
+}
+
+img {
+    padding: 4px;
+    width: 100%;
+    display: block;
+    transition: .2s;
+}
+
+/* Image scales on hover smoothly due to transition applied to images. */
+img:hover {
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.02);
+}

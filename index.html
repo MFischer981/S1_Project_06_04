@@ -17,7 +17,9 @@
 <link rel="stylesheet" href="br_reset.css">
 <link rel="stylesheet" href="br_styles.css">
 
+
 <body>
+    <!-- Nav with grid layout of links. -->
     <nav>
         <a href="#">Residential</a>
         <a href="#">Business</a>
@@ -25,22 +27,67 @@
         <a href="#">Rentals</a>
         <a href="#">Appraisals</a>
     </nav>
+    <!-- Heading with listing address. -->
     <h1>
         Listing 2048
         414 Mandel Road
         Owatonna, MN 55060
     </h1>
+    <!-- H2 with property details, span in different color to stand out. -->
     <h2>
-        List Price: $412,800
-        Square Feet: 3,300
-        Bedrooms: 4
+        <span>List Price: $412,800</span> |
+        Square Feet: 3,300 |
+        Bedrooms: 4 |
         Baths: 2-1/2
     </h2>
+    <!-- Empty header displays background banner image. -->
     <header></header>
 
+    <!-- Article with heading and property description. -->
     <article>
         <h1>Listing 2048</h1>
-        <p></p>
+        <p>Paradise found! This custom-built brand new home sits proudly on a 6.8-acre
+            high wooded site overlooking a 300-acre nature conservancy. The setting is
+            exceptional, and the home is every bit as exciting! A bright, open layout is
+            enhanced by vaulted ceilings, hardwood and tumbled, ceramic flooring, custom
+            maple cabinetry, upgraded fixtures, numerous windows, and incredible views.</p>
+        <p>There is much more. The property includes a 40x54 storage building - perfect
+            for a large boat and machinery. An exposed walkout on lower level leads down to
+            a beautiful wooded area.
+        </p>
+        <p>An extra bathroom, bedroom, and family room can be added to the unfinished
+            basement for more living space.</p>
+
+        <!-- Nested section with grid of property photos. Paragraph descriptions of each photo. -->
+        <section class="grid">
+            <div><img src="br_photo1.png" alt="">
+                <p>Image 1: Front View</p>
+            </div>
+            <div><img src="br_photo2.png" alt="">
+                <p>Image 2: Rear View</p>
+            </div>
+            <div><img src="br_photo3.png" alt="">
+                <p>Image 3: Side View</p>
+            </div>
+            <div><img src="br_photo4.png" alt="">
+                <p>Image 4: Dining Room</p>
+            </div>
+            <div><img src="br_photo5.png" alt="">
+                <p>Image 5: Kitchen</p>
+            </div>
+            <div><img src="br_photo6.png" alt="">
+                <p>Image 6: Living Room</p>
+            </div>
+            <div><img src="br_photo7.png" alt="">
+                <p>Image 7: Bedroom 1</p>
+            </div>
+            <div><img src="br_photo8.png" alt="">
+                <p>Image 8: Bedroom 2</p>
+            </div>
+            <div><img src="br_photo9.png" alt="">
+                <p>Image 9: Bedroom 3</p>
+            </div>
+        </section>
     </article>
 </body>
 
