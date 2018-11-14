@@ -31,6 +31,7 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    overflow-x: auto;
 }
 
 /* Nav links with a 2 pixel white solid border. 40 pixel border radius applied to create rounded border edges.*/
@@ -136,4 +137,10 @@ img {
 img:hover {
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
     transform: scale(1.02);
+}
+
+@media only screen and (max-width: 800px) {
+    article section.grid {
+        grid-template-columns: 1fr;
+    }
 }
