@@ -19,7 +19,7 @@ html {
     background-image: radial-gradient(white, rgb(240, 240, 240));
 }
 
-/* A nav with a linear gradient across, with progressive enhancement. Box shadow added to the nav bar. */
+/* A nav with a linear gradient across, with progressive enhancement. Box shadow added to the nav bar. Overflow x for scrolling nav on smaller devices. */
 nav {
     background-color: #21D4FD;
     background-image: linear-gradient(-19deg, #21D4FD 0%, #3e21ff 100%);
@@ -44,7 +44,7 @@ nav a {
     border: 2px white solid;
     border-radius: 40px;
     margin: 4px;
-    width: 160px;
+    min-width: 160px;
 }
 
 /* A border radius of 40 pixels and white background on hover. */
@@ -74,14 +74,14 @@ h2 {
     text-align: center;
 }
 
-/* Text shadow with no offset applied to span inside the h2 element. */
+/* Text shadow with no offset applied to span inside the span element within h2. */
 h2 span {
     color: rgb(58, 137, 202);
     font-weight: bold;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
-/* A header with a height of 450. A background image added with a size of cover to span the full height and width of the image. */
+/* A header with a height of 450. A background image added with a size of cover to span the full height and width of the image. Greyscale and brightness filters applied to header. */
 header {
     display: block;
     height: 450px;
@@ -90,7 +90,8 @@ header {
     filter: grayscale(.5) brightness(125%);
 }
 
-/* Article with a drop shadow applied. Offset 0 horizontally and 10px vertically. Shadow color of transparent black. */
+/* Article with a drop shadow applied. Offset 0 horizontally and 10px vertically. Shadow color of transparent black. Margin of -100px to
+have article overlap the header. */
 article {
     width: 80%;
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
@@ -133,7 +134,7 @@ img {
     transition: .2s;
 }
 
-/* Image scales on hover smoothly due to transition applied to images. */
+/* Image scales on hover smoothly due to transition applied to images in style above. */
 img:hover {
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
     transform: scale(1.02);
